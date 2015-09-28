@@ -1,0 +1,134 @@
+!!! 5
+%html
+  %head
+    %meta(charset='utf-8')
+    %meta(name='viewport' content='width=680, maximum-scale=1.0')
+    %title Results
+    %link(rel='stylesheet' href='/css/bootstrap.min.css' type='text/css')
+    %link(rel='stylesheet' href='/css/custom.css' type='text/css')
+  %body
+    .text-center
+      %h1 
+        = "Results from #{@twitter_feed}"
+      %br
+
+    - if @twitter_feed == "Breitbart News"
+      .container.text-center
+        .well.col-lg-6
+          %img{src:'/img/clinton_breitbart_moods.png'}
+          %p
+          %strong
+            Clinton's moods
+        .well.col-lg-6
+          %img{src:'/img/clinton_breitbart_sentiment.png'}
+          %p
+          %strong
+            Clinton's sentiments
+      .container.text-center
+        .well.col-lg-6
+          %img{src:'/img/trump_breitbart_moods.png'}
+          %p
+          %strong
+            Trump's moods
+        .well.col-lg-6
+          %img{src:'/img/trump_breitbart_sentiment.png'}
+          %p
+          %strong
+            Trump's sentiments
+
+    - if @twitter_feed == "CNN Politics"
+      .container.text-center
+        .well.col-lg-6
+          %img{src:'/img/clinton_cnn_moods.png'}
+          %p
+          %strong
+            Clinton's moods
+        .well.col-lg-6
+          %img{src:'/img/clinton_cnn_sentiment.png'}
+          %p
+          %strong
+            Clinton's sentiments
+      .container.text-center
+        .well.col-lg-6
+          %img{src:'/img/trump_cnn_moods.png'}
+          %p
+          %strong
+            Trump's moods
+        .well.col-lg-6
+          %img{src:'/img/trump_cnn_sentiment.png'}
+          %p
+          %strong
+            Trump's sentiments
+
+    - if @twitter_feed == "CBS Politics"
+      .container.text-center
+        .well.col-lg-6
+          %img{src:'/img/clinton_cbs_moods.png'}
+          %p
+          %strong
+            Clinton's moods
+        .well.col-lg-6
+          %img{src:'/img/clinton_cbs_sentiment.png'}
+          %p
+          %strong
+            Clinton's sentiments
+      .container.text-center
+        .well.col-lg-6
+          %img{src:'/img/trump_cbs_moods.png'}
+          %p
+          %strong
+            Trump's moods
+        .well.col-lg-6
+          %img{src:'/img/trump_cbs_sentiment.png'}
+          %p
+          %strong
+            Trump's sentiments
+
+    - if @twitter_feed == "Huffington Post Politics"
+      .container.text-center
+        .well.col-lg-6
+          %img{src:'/img/clinton_huffpo_moods.png'}
+          %p
+          %strong
+            Clinton's moods
+        .well.col-lg-6
+          %img{src:'/img/clinton_huffpo_sentiment.png'}
+          %p
+          %strong
+            Clinton's sentiments
+      .container.text-center
+        .well.col-lg-6
+          %img{src:'/img/trump_huffpo_moods.png'}
+          %p
+          %strong
+            Trump's moods
+        .well.col-lg-6
+          %img{src:'/img/trump_huffpo_sentiment.png'}
+          %p
+          %strong
+            Trump's sentiments
+
+    - if @twitter_feed == "Politico"
+      .container.text-center
+        .well.col-lg-6
+          %img{src:'/img/clinton_politico_moods.png'}
+          %p
+          %strong
+            Clinton's moods
+        .well.col-lg-6
+          %img{src:'/img/clinton_politico_sentiment.png'}
+          %p
+          %strong
+            Clinton's sentiments
+      .container.text-center
+        .well.col-lg-6
+          %img{src:'/img/trump_politico_moods.png'}
+          %p
+          %strong
+            Trump's moods
+        .well.col-lg-6
+          %img{src:'/img/trump_politico_sentiment.png'}
+          %p
+          %strong
+            Trump's sentiments
+      
