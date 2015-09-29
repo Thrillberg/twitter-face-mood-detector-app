@@ -8,7 +8,7 @@
     %link(rel='stylesheet' href='/css/custom.css' type='text/css')
   %body
     .text-center
-      %h1 Political Bias Detector
+      %h1 Political Mood and Sentiment Analyzer
       %br
   .text-center
     %form{ :action => "", :method => "post"}
@@ -16,6 +16,11 @@
         %label='Choose a Twitter feed'
         %select{name: :twitter_feed }
           - @twitter_feeds.each do |feed|
-            %option{:name => feed, :value=> feed}="#{feed}"
+            %option{:name => feed[1], :value=> feed[1]}="#{feed[1]}"
+      %p
+        %label='Choose a politician'
+        %select{name: :politician }
+          - @politicians.each do |politician|
+            %option{:name => politician[1][0], :value=> politician[1][0]}="#{politician[1][0]}"
       %p
         %input{:type => "submit", :value => "Submit", :class => "button"}

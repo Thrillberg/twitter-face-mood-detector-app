@@ -1,0 +1,7 @@
+production:
+  adapter: 'sqlite3'
+  file: 'production.sqlite3'
+
+development:
+  adapter: 'sqlite3'
+  file: 'development.sqlite3'
